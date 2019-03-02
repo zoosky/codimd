@@ -1,6 +1,8 @@
 /* eslint-env browser, jquery */
 /* global moment, serverurl */
 
+import './lib/eth-auth-helper'
+
 import {
   checkIfAuth,
   clearLoginState,

@@ -53,6 +53,11 @@
                     <i class="fa fa-mail-forward"></i> <%= __('Sign in via %s', authProviders.oauth2ProviderName || 'OAuth2') %>
                 </a>
                 <% } %>
+                <% if (authProviders.ethAuth) { %>
+                <button type="button" id="eth-auth-login" class="btn btn-lg btn-block btn-social btn-reddit">
+                    <i class="fa fa-btc"></i> <%= __('Sign in via %s', 'Eth Auth') %>
+                </button>
+                <% } %>
                 <% if ((authProviders.facebook || authProviders.twitter || authProviders.github || authProviders.gitlab || authProviders.mattermost || authProviders.dropbox || authProviders.google || authProviders.saml || authProviders.oauth2) && authProviders.ldap) { %>
                 <hr>
                 <% }%>
