@@ -20,6 +20,7 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css" integrity="sha256-3iu9jgsy9TpTwXKb7bNQzqWekRX7pPK+2OLj3R922fo=" crossorigin="anonymous" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.7.0/css/reveal.min.css" integrity="sha256-9+Wg2bcNeiOMGXOUNqBdceY2lAH/eCiTDcdzHhHIl48=" crossorigin="anonymous" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/emojify.js/1.1.0/css/basic/emojify.min.css" integrity="sha256-UOrvMOsSDSrW6szVLe8ZDZezBxh5IoIfgTwdNDgTjiU=" crossorigin="anonymous" />
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css" integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ==" crossorigin=""/>
         <%- include build/slide-header %>
         <%- include shared/polyfill %>
         <% } else { %>
@@ -108,6 +109,7 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/vega/5.4.0/vega.min.js" integrity="sha256-PrkRj4B3I5V9yHBLdO3jyyqNUwSKS1CXXIh3VrnFPEU=" crossorigin="anonymous" defer></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/vega-lite/3.4.0/vega-lite.min.js" integrity="sha256-ro+FWr16NboXJ5rSwInNli1P16ObUXnWUJMgKc8KnHI=" crossorigin="anonymous" defer></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/vega-embed/4.2.2/vega-embed.min.js" integrity="sha256-FvIpRBgWEczIjFNpbshtVJbx3QlxqxkBkf+xqZeOxUU=" crossorigin="anonymous" defer></script>
+        <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js" integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og==" crossorigin="" defer></script>
         <%- include build/slide-scripts %>
         <% } else { %>
         <script src="<%- serverURL %>/build/MathJax/MathJax.js" defer></script>
