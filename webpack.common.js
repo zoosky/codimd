@@ -165,6 +165,11 @@ module.exports = {
         context: path.join(__dirname, 'node_modules/reveal.js'),
         from: 'plugin',
         to: 'reveal.js/plugin'
+      },
+      {
+        context: path.join(__dirname, 'node_modules/leaflet'),
+        from: 'dist',
+        to: 'leaflet'
       }
     ]),
     new MiniCssExtractPlugin(),
